@@ -21,7 +21,7 @@ export function LivePresentation() {
       <div className="live-shade" />
       <div className="live-top">
         <span className="live-badge"><span className="live-dot" />LIVE</span>
-        <span className="live-viewers"><Eye size={13} />{counts[step % counts.length].toLocaleString("pt-PT")} espectadores <small>simulados</small></span>
+        <span className="live-viewers"><Eye size={13} />{(counts[step % counts.length] ?? 1248).toLocaleString("pt-PT")} espectadores <small>simulados</small></span>
       </div>
       <div className="live-host"><span className="host-avatar">T</span><div><strong>Conteúdo com estratégia</strong><span>Apresentação do guia digital</span></div></div>
       <div className="access-panel">
