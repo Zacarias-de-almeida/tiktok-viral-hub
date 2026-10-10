@@ -8,3 +8,8 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep the sales experience on the index route with in-page anchors, because this project requires one continuous sales page.
+- Centralize the checkout address and product pricing in `src/lib/sales-config.ts`, so every purchase link uses the same official destination.
+- Keep simulated presentation state separate from purchase notifications; purchase notifications require authorized confirmed payment events and render nothing without one.
+- Define visual styling in the global semantic design system and use Button variants for sales actions, to keep the page consistent.
