@@ -319,3 +319,60 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 700; letter-spacing:
 .funnel-error { color: var(--destructive); font-size: 13px; }
 .funnel-status { font-family: var(--font-display); font-size: 22px; font-weight: 800; color: var(--cyan); text-transform: uppercase; }
 .funnel-actions { display: flex; flex-direction: column; gap: 12px; margin-top: 20px; }
+
+
+/* FULL GREEN PALETTE OVERRIDE */
+:root, .dark {
+  --background: oklch(0.12 0.08 145);
+  --foreground: oklch(0.82 0.2 145);
+  --card: oklch(0.16 0.09 145);
+  --card-foreground: oklch(0.82 0.2 145);
+  --popover: oklch(0.15 0.09 145);
+  --popover-foreground: oklch(0.82 0.2 145);
+  --primary: oklch(0.48 0.18 145);
+  --primary-foreground: oklch(0.82 0.2 145);
+  --secondary: oklch(0.20 0.10 145);
+  --secondary-foreground: oklch(0.82 0.2 145);
+  --muted: oklch(0.20 0.10 145);
+  --muted-foreground: oklch(0.70 0.16 145);
+  --accent: oklch(0.25 0.12 145);
+  --accent-foreground: oklch(0.82 0.2 145);
+  --cyan: oklch(0.76 0.2 145);
+  --live: oklch(0.42 0.17 145);
+  --destructive: oklch(0.48 0.18 145);
+  --destructive-foreground: oklch(0.82 0.2 145);
+  --border: oklch(0.34 0.13 145);
+  --input: oklch(0.34 0.13 145);
+  --ring: oklch(0.76 0.2 145);
+  --chart-1: oklch(0.55 0.18 145);
+  --chart-2: oklch(0.65 0.19 145);
+  --chart-3: oklch(0.45 0.15 145);
+  --chart-4: oklch(0.75 0.2 145);
+  --chart-5: oklch(0.58 0.18 145);
+  --sidebar: oklch(0.15 0.09 145);
+  --sidebar-foreground: oklch(0.82 0.2 145);
+  --sidebar-primary: oklch(0.48 0.18 145);
+  --sidebar-primary-foreground: oklch(0.82 0.2 145);
+  --sidebar-accent: oklch(0.22 0.11 145);
+  --sidebar-accent-foreground: oklch(0.82 0.2 145);
+  --sidebar-border: oklch(0.34 0.13 145);
+  --sidebar-ring: oklch(0.76 0.2 145);
+  --hero-shade: linear-gradient(90deg, oklch(0.12 0.08 145 / 98%) 3%, oklch(0.12 0.08 145 / 90%) 35%, oklch(0.12 0.08 145 / 55%) 70%, transparent 100%);
+  --image-shade: linear-gradient(180deg, oklch(0.12 0.08 145 / 30%), oklch(0.12 0.08 145 / 45%) 25%, oklch(0.12 0.08 145 / 92%) 100%);
+  --shadow-button: 0 6px 28px oklch(0.55 0.18 145 / 30%);
+}
+html, body { background-color: var(--background) !important; color: var(--foreground) !important; }
+body, body * { color: var(--foreground) !important; border-color: var(--border) !important; }
+body :is(h1,h2,h3,h4,h5,h6,p,span,strong,small,em,label,a,li,button,input,textarea,div) { color: var(--foreground) !important; }
+body :is(.site-header,.presentation-section,.offer-section,.final-section,.desire-card,.funnel-card,.entry-notification,.purchase-notification,.access-panel,.live-viewers,.live-device,.benefit-card,.product-section,.funnel-page,.funnel-field input) {
+  background-color: var(--card) !important;
+}
+body :is(a,button,[role="button"],.live-badge,.purchase-button,.promo-badge) {
+  background-color: oklch(0.25 0.12 145) !important;
+  color: oklch(0.82 0.2 145) !important;
+  border-color: oklch(0.55 0.18 145) !important;
+}
+body svg, body svg * { color: var(--foreground) !important; stroke: var(--foreground) !important; }
+body .hero-overlay { background: var(--hero-shade) !important; }
+body .live-shade { background: var(--image-shade) !important; }
+body .live-dot { background-color: var(--foreground) !important; }
