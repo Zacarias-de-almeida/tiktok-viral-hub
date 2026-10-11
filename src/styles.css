@@ -81,7 +81,7 @@
   --muted-foreground: oklch(0.73 0.008 260);
   --accent: oklch(0.25 0.005 260);
   --accent-foreground: var(--foreground);
-  --cyan: oklch(0.84 0.145 190);
+  --cyan: oklch(0.76 0.19 150);
   --live: var(--primary);
   --hero-shade: linear-gradient(90deg, var(--background) 3%, oklch(0.12 0.002 260 / 94%) 28%, oklch(0.12 0.002 260 / 45%) 62%, transparent 100%);
   --image-shade: linear-gradient(180deg, oklch(0.1 0 0 / 20%), oklch(0.1 0 0 / 30%) 25%, oklch(0.1 0 0 / 90%) 100%);
@@ -113,8 +113,8 @@
   --card-foreground: oklch(0.984 0.003 247.858);
   --popover: oklch(0.208 0.042 265.755);
   --popover-foreground: oklch(0.984 0.003 247.858);
-  --primary: oklch(0.929 0.013 255.508);
-  --primary-foreground: oklch(0.208 0.042 265.755);
+  --primary: oklch(0.66 0.22 25);
+  --primary-foreground: oklch(1 0 0);
   --secondary: oklch(0.279 0.041 260.031);
   --secondary-foreground: oklch(0.984 0.003 247.858);
   --muted: oklch(0.279 0.041 260.031);
