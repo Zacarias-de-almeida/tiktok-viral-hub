@@ -13,3 +13,6 @@
 - Centralize the checkout address and product pricing in `src/lib/sales-config.ts`, so every purchase link uses the same official destination.
 - Keep simulated presentation state separate from purchase notifications; purchase notifications require authorized confirmed payment events and render nothing without one.
 - Define visual styling in the global semantic design system and use Button variants for sales actions, to keep the page consistent.
+- Funnel logic lives in `src/lib/funnel/core.ts` with an injectable repository; only the provider webhook may mark orders paid, because browser navigation is not proof of payment.
+- Funnel tables are service-role only (RLS on, no public policies) and ebooks are served via short-lived signed URLs from a private bucket.
+- Checkout/order/offer pages are separate routes (exception to the single sales page rule) and stay unlinked from the sales page until the gateway is live.
